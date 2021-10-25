@@ -1,0 +1,29 @@
+'''Дан список целых чисел. Подсчитать сколько четных чисел в списке
+
+i=list(map(int,input(' Введите элементы списка через пробел ' ).split()))
+print("ваш  список: ",i)
+index=0
+chet=0
+kol0=0
+while index<len(i):
+    if int(i[index])%2==0:
+        chet+=1 
+    if i[index]==0 :
+      kol0+=1
+    index+=1
+
+print("четных:",chet-kol0)'''
+
+i=list(map(int,input(' Введите элементы списка через пробел ' ).split()))
+print("ваш  список: ",i)
+index=0
+chet=0
+kol0=0
+for index in range(0,len(i)):
+  if int(i[index])%2==0:
+        chet+=1 
+  if i[index]==0 :
+      kol0+=1
+  index+=1
+
+print("четных:",chet-kol0)

@@ -1,0 +1,22 @@
+'''Дан список целых чисел.
+Создать новый список, каждый элемент которого равен исходному элементу
+умноженному на -2
+
+i=list(map(int,input(' Введите элементы списка через пробел ' ).split( )))
+print("ваш старый список",i)
+index=0
+newelement=0
+while index<len(i):
+   newelement=i[index]*(-2)
+   
+   print(newelement,sep=" ",end=" ")
+   index+=1
+'''
+i=list(map(int,input(' Введите элементы списка через пробел ' ).split( )))
+print("ваш старый список",i)
+index=0
+for index in range(0,len(i)):
+   newelement=i[index]*(-2)
+   
+   print(newelement,sep=" ",end=" ")
+   index+=1
